@@ -36,8 +36,7 @@ jobs:
         run: docker-compose up -d
       - name: Push
         run: docker-compose push
-        with:
-         tags: ${{ secrets.DOCKER_HUB_USERNAME }}/shiny-barnacle:v1.0.0
+        
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
