@@ -35,7 +35,7 @@ jobs:
       - name: Build
         run: docker-compose up -d
       - name: Push
-        run: docker-compose -f docker-compose.yml push --ignore-push-failures
+        run: docker-compose push
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
