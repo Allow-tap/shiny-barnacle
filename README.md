@@ -1,1 +1,1 @@
-Simple project to display how to integrate CI to your containerized application with github actions.
+Simple project to display how to setup CI to your containerized application with github actions.
